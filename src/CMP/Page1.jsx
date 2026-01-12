@@ -1,9 +1,9 @@
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Page1() {
 
-    
+    const navigate = useNavigate();
     function saltarPagina() {
-        
+        navigate('/page2')
     }
     return(
         <div>
